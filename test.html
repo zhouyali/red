@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+                .row-wrap {
+        overflow: hidden;
+        }
+        .row1, .row2, .row3 {
+        padding: 10px;
+        margin-bottom: -1000px;
+        padding-bottom: 1000px;
+        }
+        .row1{
+        width: 120px;
+        background: #F2F2F2;
+        float: left;
+        }
+        .row2{
+        width: 300px;
+        background: #81C0F2;
+        color: #FFF;
+        float: left;
+        _margin-right: -6px; //fix ie6
+        }
+        .row3{
+        width: 150px;
+        background: #FF6600;
+        color: #FFF;
+        overflow: hidden;
+        zoom: 1; //触发haslayout
+        }
+
+    </style>
+</head>
+<body>
+<div class="row-wrap">
+<div class="row1">
+<p>悉尼洲际...</p>
+</div>
+<div class="row2">
+<p>酒店离悉尼海滨...</p>
+</div>
+<div class="row3">
+<p>在砂岩商场...</p>
+</div>
+</div>
+</body>
+</html>
+
