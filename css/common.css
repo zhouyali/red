@@ -68,39 +68,64 @@ li {
 /*page style*/
 header {
     width: 100%;
-    border-bottom: 5px solid red;
+    border-bottom: 10px solid rgb(239,86,97);
 }
 .logo {
-    width: 240px;
-    height: 60px;
-    background:pink;
+    margin-left: 20px;
+    width: 272px;
+    height: 90px;
+    background: url("../img/logo.png") no-repeat 100%;
 }
 .list {
     width: 100%;
-    padding-left: 240px;
+    padding-left: 292px;
     font-size: 0;
 }
-.list span {
+.list a {
     display: inline-block;
     width: 14.28%;
-    background: yellow;
-    font-size: 14px;
+    font-size: 12px;
+    color: #7D7A7A;
     text-align: center;
-    white-space:nowrap;
+    white-space: nowrap;
     height: 60px;
-    background:url('./img/test.png') no-repeat center 33%;
+    margin-top: 28px;
 }
-.list span a {
+.list .home {
+  background: url('../img/home.png') no-repeat center top;
+}
+.list .reward {
+  background: url('../img/reward.jpg') no-repeat center top;
+}
+.list .thanks {
+  background: url('../img/thanks.png') no-repeat center top;
+}
+.list .gift {
+  background: url('../img/gift.png') no-repeat center top;
+}
+.list .order {
+  background: url('../img/order.png') no-repeat center top;
+}
+.list .chart {
+  background: url('../img/chart.png') no-repeat center top;
+}
+.list .contact {
+  background: url('../img/contact.jpg') no-repeat center top;
+}
+.list a span {
     display: block;
     margin-top: 40px;
 }
-.list span a:hover {
+.list a span:hover {
     color: red;
 }
 .active {
-    color: red;
+    color: red!important;
 }
 .gap {
-    height: 80px;
-    background: yellow;
+    height: 210px;
+    background: #FFFFFF;
+}
+div {
+  box-sizing: border-box;
 }
