@@ -10,13 +10,35 @@
     <div class="container">
         <header id="title" class="clearfix">
         </header>
-        <div class="gap"></div>
         <div class="main-wrap">
-            <div class="main">
-                <span class="title">感谢</span>
-                <div class="info clearfix">
+            <div class="content-wrap">
+                <div class="thank-logo"> 
+                </div>
+                <div class="letter-wrap clearfix">
+                    <div class="letter fl">
+                        <p>亲爱的 <span>pa潘浩</span>:</p>
 
+                        　　在此我代表联想诚挚祝贺您为公司服务年限跨入了一个新的里程碑!<br/><br/>
 
+                        　　经过了这么多年在联想的历练,回首往事,您一定会为公司今日的辉煌以及您为此做出的贡献而百感交集,分外自豪吧？联想之所以能取得这些成就,靠的是正确的战略方针和过硬的产品服务,更离不开包括您在内的大批优秀人才孜孜不倦的努力。你们每一个人心中都铭记着联想之道,时刻不忘主人翁精神,说到做到,尽心尽力。正是大家这种专注和奉献的高尚情操在不断推动着联想取得一个又一个成功,齐心协力,将联想建设成为一家基业长青的伟大公司。<br/><br/>
+
+                        　　为表彰服务达到一定年限的员工,感谢你们长久以来对联想的贡献,公司专门设立了这项长期服务奖。请您在礼品库里挑选一款心仪的礼品,并接受公司对您最深的谢意。<br/><br/>
+
+                        　　让我们一起尽情享受这光荣的时刻,共同祝愿联想业绩长虹!
+
+                        致礼, 
+                    </div>
+                    <div class="fl photo">
+                        <img src="" alt="">
+                        <div class="position">
+                             潘浩<br/>
+                            全球高级攻城狮</br>
+                            联想集团
+                        </div>
+                    </div> 
+                </div>
+                <div class="sign">
+                    
                 </div>
             </div>
         </div>
@@ -29,97 +51,63 @@
 </script>
 <style type="text/css">
     /*内容区样式*/
-    
-    .main-wrap {
-        width: 100%;
-    }
-    
-    .main {
-        width: 1080px;
-        margin: 0 auto;
-        position: relative;
-        padding: 0 150px;
-        background: pink;
-    }
-    
-    .sub-title {
-        background: red;
-        color: #fff;
-        height: 30px;
-        line-height: 30px;
-    }
-    
-    .title {
-        position: absolute;
-        top: -30px;
-        left: 0;
-    }
-    
-    .info {
-        margin: 0 auto;
-        padding: 20px 0;
-    }
-    
-    .info img {
-        width: 250px;
-        height: 250px;
-        border: 1px solid #ccc;
-        margin-right: 60px;
-    }
-    
-    .select-wrap {
-        margin-bottom: 20px;
-    }
-    
-    select {
-        background: pink;
-    }
-    
-    select::-ms-expand {
-        display: none;
-    }
-    /* --火狐、谷歌清除--*/
-    
-    option {
-        /*width: 64px;*/
-        text-align: center;
-    }
-    
-    .btn {
-        display: inline-block;
-        padding: 5px 10px;
-        background: yellow;
-        margin: 50px 0 0 50px;
-    }
-    
-    .desc {
-        font-size: 14px;
-        color: #999;
-        padding: 10px 150px;
-    }
-    
-    .desc img {
-        width: 100%;
-        height: 150px;
-        border: 1px solid #000;
-        margin-bottom: 10px;
-    }
-    
-    .btn-wrap {
-        margin: 0 auto;
-        width: 50%;
-    }
-    
-    .btn-wrap .btn {
-        background: red;
-        padding: 5px 30px;
-    }
-    
-    .btn-wrap .btn.book {
-        color: #fff;
-    }
-    
-    .btn-wrap .btn.back {
-        color: #000;
-    }
+  .main-wrap {
+    width: 100%;
+    min-height:100%;
+    background: rgb(239, 86, 97);
+    padding-top: 10px;
+
+  }
+  .main {
+  }
+  
+  .content-wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 970px;
+    height:785px;
+    /*根据字体大小设置高度*/
+    background: url("../img/thank.jpg") no-repeat center center;
+    background-size: 100%;
+  }
+ .thank-logo {
+    width: 325px;
+    height: 116px;
+    background: url(../img/thankyou.png) no-repeat center bottom;
+    background-size: 100%;
+    margin: 0 auto; 
+ }
+ .letter-wrap {
+    width: 820px;
+    margin: 30px auto 0;
+    overflow:hidden;
+    padding-left: 73px;
+ }
+ .letter {
+    color: #fd8681;
+    width:50%;
+    font-size: 16px;
+    margin-right: 30px;
+ }
+ .photo ,.photo img{
+    display: inline-block;
+    width: 40%;
+    height: 340px;
+    background: blue;
+
+ }
+ .position {
+    text-align: right;
+    color: #5f5954;
+    font-size: 16px;
+ }
+ .sign {
+    position: absolute;
+    width: 300px;
+    height:100px;
+    background: pink;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -150px;
+ }
 </style>
