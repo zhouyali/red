@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>title</title>
+    <title>联系我们</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../css/common.css">
 </head>
 <body>
@@ -18,24 +19,23 @@
                          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp欢迎您登陆“联想员工关怀网”，我们诚挚的感谢您在过去的时光里为联想做出的所有贡献，和卓著成绩，同时希望联想每一天都能为您提供新的体验、新的成长，新的共赢。
                          <br/>
                          <br/>
-                         <br/>
                           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp如果您有任何问题，请随时与我们联系，我们将尽快帮助您解决问题。
                      </div>
                      <div class="fr">
-                        <p>“联想客服礼品网站”联系方式：</p>
+                        <p class="frTitle">“联想客服礼品网站”联系方式：</p>
                         <div class="way">
                           <div>
-                            <i></i>
+                            <i><img src="../img/contact_1.jpg"/></i>
                             北京雷欧广告制作有限公司<br/>
                             人力资源服务————邵雨
                           </div>
                           <div>
-                            <i></i>
+                            <i ><img src="../img/contact_2.jpeg"/></i>
                             010-58869000<br/>
                             010-58866621
                           </div>
                           <div>
-                            <i></i>
+                            <i><img src="../img/contact_3.jpg"/></i>
                             hrsupport@lenovo.com<br/>
                             serviceaward@lenovo.com
                           </div>
@@ -55,20 +55,23 @@
 /*内容区样式*/
 .main-wrap {
     width: 100%;
-    /*height: 100%;*/
+    background: #ef5661;
+    padding: 13px 0 20px 0;
 }
 .main {
-    width: 1080px;
+    width: 1060px;
     margin: 0 auto;
     position: relative;
-    padding: 0 150px;
-    background: pink;
-
+    padding: 126px 150px;
+    background: url(../img/content.jpg) repeat-y;
+    border: 2px black solid;
 }
 .title {
     position: absolute;
-    top: -30px;
+    top: -60px;
     left: 0;
+    font-size: 30px;
+    color: #ef5661;
 }
 .info {
     margin: 0 auto;
@@ -79,32 +82,40 @@
   width: 50%;
   text-align: center;
   font-size: 14px;
-
+ 
+  color: #595757;
+}
+.frTitle{
+	font-size: 18px;
+	color: #ef5661;
+	display: block;
+	margin:5px 0 0 80px;
+	
+	font-family: "黑体";
 }
 .info .fl {
   text-align: justify;
+  line-height: 27px;
 }
 .line {
   position: absolute;
   top: 25px;
   left: 56.5%;
-  height: 120px;
+  height: 170px;
   width: 4px;
-  background: red;
+  background: #ef5661;
 }
 .way div {
   position: relative;
-  padding-left: 110px;
+  padding:15px 0 0 105px;
+  text-align: left;
 }
 .way div i{
   display: block;
-  width: 50px;
-  height: 50px;
-  background: yellow;
-  position: absolute;
-  top: 3%;
-  left: 27%;
-  border-top: 1px solid #000;
+  width: 36px;
+  float: left;
+  height: 36px;
+  margin: 3px 20px 0 0;
 }
 
 
