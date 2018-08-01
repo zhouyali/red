@@ -13,21 +13,34 @@
         <div class="main-wrap" id="home">
             <div class="main">
                 <span class="title">礼品中心</span>
-                <div class="info">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">
-                    <img src="">                    
+                <div class="imag">
+                	
+                	<div class="info">
+                    	<img src="">
+                	</div>
+                	<div class="info">
+                    	<img src="">
+                	</div>
+                	<div class="info">
+                    	<img src="">
+                	</div>
+                	<div class="info">
+                    	<img src="">
+                	</div>
+                	
+                	<div class="info">
+                    	<img src="">
+                	</div>
+                	<div class="info">
+                    	<img src="">
+                	</div>
+                	
+                </div>              
+                <div class="clearfix">
+                	
                 </div>
             </div>
 
-                         
-        </div> 
-        <div class="main-wrap">
                          
         </div> 
     </div>
@@ -40,29 +53,39 @@
 /*内容区样式*/
 .main-wrap {
     width: 100%;
-
+	background: #ef5661;
+    padding: 13px 0 20px 0;
+    min-height: 500px;	
 }
 .main {
-    width: 1080px;
+    width: 1060px;
     margin: 0 auto;
     position: relative;
-    padding: 0 150px;
-    background: pink;
+    padding: 35px 135px 8px 145px;
+    background: url(../img/content.jpg) repeat-y;
+    border: 2px black solid;
 }
 
 .title {
     position: absolute;
-    top: -30px;
+    top: -60px;
     left: 0;
+    font-size: 30px;
+    color: #ef5661;
 }
+.imag{
+	width: 100%;
+}
+
 .info {
-    margin: 0 auto;
-    padding: 20px 0;
+	width: 23.5%;
+	border: 2px #EF5661 solid;
+	float: left;
+    margin: 0 11px 11px 0;
+    background: white;
 }
 .info img{
-    width: 24%;
-    height: 150px;
-    border: 1px solid #000;
+    width: 100%;
 }
 
 </style>
