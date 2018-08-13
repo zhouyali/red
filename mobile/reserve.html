@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		
+		<title>预定信息</title>
+		<script type="text/javascript">
+			(function(){
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				
+				//console.log(width);
+				html.style.fontSize = width/15 + 'px';
+				//iphone6下，1rem=25px；
+			})();
+		</script>
+		<style type="text/css">
+			body{
+				font-family: helvetica;
+				margin: 0;
+			}
+			body *{
+				-webkit-text-size-adjust: 100%;
+				-webkit-user-select: none;
+			}
+			a,button,input{
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				/*默认点击效果*/
+			}
+			button,input{
+				-webkit-appearance: none;
+				border-radius: 0;
+				/*默认外观*/
+			}
+			a{
+				text-decoration: none;
+			}
+			input{
+				outline: none;
+				vertical-align: middle;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			img{
+				vertical-align: middle;
+			}
+			
+			.main{
+				font-size: 0.65rem;
+				background: #EF5661;
+				padding: 0.1rem 0;
+				color: #595757;
+			}
+			.title{
+				font-size: 1rem;
+    			color: #ef5661;
+    			padding: 0 0 0.1rem 1.4rem;
+			}
+			.container{
+				width: 12rem;
+				min-height: 14rem;
+				margin: 0.8rem auto;
+				background: url(../img/content.jpg) repeat-y;
+				border: 1.5px black solid;
+				padding: 1.2rem 0;
+			}
+			.gap{
+				width: 15rem;
+				height: 7rem;
+				background: white;
+			}
+			.info {
+				width: 8rem;
+			    margin-left: 2.2rem;
+			}
+			.form-group{
+				height: 2.28rem;
+				margin-bottom: 0.5rem;
+			}
+
+			.input input{
+				width: 7rem;
+				height: 1.2rem;
+				border: 1px #54504d solid;
+				border-radius: 2px;
+				background: #F7F1E3;
+			}
+			.Word{
+				margin-bottom: 0.1rem;
+			}
+			.redWord{
+				font-size: 0.52rem;
+				color: #EF5661;
+				
+			}
+			.btn{
+				height: 1.28rem;
+				margin-top: 1rem;
+			}
+			.btn1{
+				float: left;
+			}
+			.btn1 input{
+				width: 2.5rem;
+				height: 1.2rem;
+				border: 1px #54504D solid;
+				border-radius: 3px;
+				box-shadow: 0 5px 2px #A29F99;
+				background: #EF5661;
+				color: white;
+				cursor:pointer;
+				font-size: 0.56rem;
+			}
+			.btn2{
+				display: block;
+				width: 2.5rem;
+				float: right;
+				height: 1.13rem;
+				margin-right: 1rem;
+				margin-top: -0.01rem;
+				border: 1px #54504D solid;
+				border-radius: 3px;
+				line-height: 1.2rem;
+				text-align: center;
+				background: #EF5661;
+				box-shadow: 0 5px 2px #A29F99;
+				color: #595757;
+				font-size: 0.56rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="gap"></div>
+		<div class="title">预定信息</div>
+        <div class="main">
+			<div class="container">
+                <div class="info">
+	                <form class="" role="form" action="">
+		                <div class="form-group">
+		                	<div class="Word">
+		                		上级领导地址
+	                    		<span class="redWord">
+		                    		（必填）
+		                    	</span>
+		                	</div>
+		                    <div class="input">
+		                    	<input id="" type="text"  required="">
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                	<div class="Word">
+		                		上级领导工位号
+		                    	<span class="redWord">
+		                    		（京区必填）
+		                    	</span>
+		                	</div>
+		                    <div class="input">
+		                    	<input id="short" type="text"  required="">
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                	<div class="Word">
+		                		上级领导电话
+		                    	<span class="redWord">
+		                    		（必填）
+		                    	</span>
+		                	</div>
+		                    <div class="input">
+		                    	<input id="" type="number"  required="">
+		                    </div>
+		                </div>
+		                <div class="form-group">
+		                	<div class="Word">
+		                		获奖本人电话
+		                    	<span class="redWord">
+		                    		（必填）
+		                    	</span>
+		                	</div>
+		                    <div class="input">
+		                    	<input id="" type="number"  required="">
+		                    </div>
+		                </div>
+		                <div class="btn">
+		                	<div class="btn1">
+		                		<input type="submit" value="预定" ></input>
+		                	</div>
+		                	<a href="###" class="btn2">
+		                		返回
+		                	</a>
+		                </div>
+		            </form>
+                </div>
+            </div>
+        </div>
+	</body>
+</html>  

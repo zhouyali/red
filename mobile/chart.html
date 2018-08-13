@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		
+		<title>联系我们</title>
+		<script type="text/javascript">
+			(function(){
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				
+				//console.log(width);
+				html.style.fontSize = width/15 + 'px';
+				//iphone6下，1rem=25px；
+			})();
+		</script>
+		<style type="text/css">
+			body{
+				font-family: helvetica;
+				margin: 0;
+			}
+			body *{
+				-webkit-text-size-adjust: 100%;
+				-webkit-user-select: none;
+			}
+			a,button,input{
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				/*默认点击效果*/
+			}
+			button,input{
+				-webkit-appearance: none;
+				border-radius: 0;
+				/*默认外观*/
+			}
+			a{
+				text-decoration: none;
+			}
+			input{
+				outline: none;
+				vertical-align: middle;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			img{
+				vertical-align: middle;
+			}
+			
+			.main{
+				font-size: 0.65rem;
+				background: #EF5661;
+				padding: 0.1rem 0;
+				color: #595757;
+			}
+			.title{
+				font-size: 1rem;
+    			color: #ef5661;
+    			padding: 0 0 0.1rem 1rem;
+			}
+			.container{
+				width: 12rem;
+				min-height: 15rem;
+				margin: 0.8rem auto;
+				background: url(../img/content.jpg) repeat-y;
+				border: 1.5px black solid;
+				padding: 1.2rem 0.5rem;
+			}
+			.gap{
+				width: 15rem;
+				height: 7rem;
+				background: white;
+			}
+
+			.clearfix{
+				clear: both;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="gap"></div>
+		<div class="title">联系我们</div>
+	    <div class="main">
+	    	<div class="container">
+					<span class="title">讨论专区</span>
+					<div class="content">
+						<div class="theme">
+							<span class="themeTitle">讨论主题</span>
+							<div class="sendtheme"><a href="###">我的主题</a></div>
+							<div class="sendtheme"><a href="###">发表主题</a></div>
+						</div>
+						<div class="table">
+							<table class="tab" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr> 
+					    				<td class="tabTheme tabTh">主题</td>
+					    				<td class="tabAuthor tabTh">作者</td>
+					    				<td class="tabReply tabTh">回复/点击</td>
+					    				<td class="tabUpdate tabTh">最后更新</td>
+					    			</tr>
+								</thead>
+								<tbody id="tabContent">
+									<tr>
+										<td class="tabTheme">见证五年联想的坚毅前行！</td>
+										<td class="tabAuthor">WANXI2</td>
+										<td class="tabReply">0/21</td>
+										<td class="tabUpdate"></td>
+									</tr>
+									<tr>
+										<td class="tabTheme"></td>
+										<td class="tabAuthor"></td>
+										<td class="tabReply">0/0</td>
+										<td class="tabUpdate"></td>
+									</tr>
+									<tr>
+										<td class="tabTheme">3</td>
+										<td class="tabAuthor">3</td>
+										<td class="tabReply">3</td>
+										<td class="tabUpdate">3</td>
+									</tr>
+									<tr>
+										<td class="tabTheme">4</td>
+										<td class="tabAuthor">4</td>
+										<td class="tabReply">4</td>
+										<td class="tabUpdate">4</td>
+									</tr>
+									<tr>
+										<td class="tabTheme">见证五年联想的坚毅前行！</td>
+										<td class="tabAuthor">1</td>
+										<td class="tabReply">1</td>
+										<td class="tabUpdate">1</td>
+									</tr>
+									<tr>
+										<td class="tabTheme">见证五年联想的坚毅前行！</td>
+										<td class="tabAuthor">1</td>
+										<td class="tabReply">1</td>
+										<td class="tabUpdate">1</td>
+									</tr>
+								</tbody>
+								<tr>
+										<td colspan="4" class="FenYe">
+											共&nbsp 
+											<span id="">95</span>
+											&nbsp条记录&nbsp&nbsp
+											<span id="">1</span>
+											/
+											<span id="">16</span>
+											页
+											<a href="###" onclick="">首页</a>
+											<a href="###" onclick="">前页</a>
+											<a href="###" onclick="">后页</a>
+											<a href="###" onclick="">末页</a>
+											&nbsp&nbsp跳转：
+											<input id="num" style="width: 75px;height: 20px; border: 1px solid #9fa0a0; outline:none;"/>
+											&nbsp&nbsp
+											<a href="###" id="go" onClick="FenYe()">Go</a>
+										</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+        </div>  
+	    </div>
+	</body>
+</html>

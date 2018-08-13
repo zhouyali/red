@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>会员登录</title>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no" />
+		<style type="text/css">
+			body{
+				font-family: helvetica;
+				margin: 0;
+				font-size: 0.8rem;
+				background: #EF5661;
+			}
+			body *{
+				-webkit-text-size-adjust: 100%;
+				-webkit-user-select: none;
+			}
+			a,button,input{
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				/*默认点击效果*/
+			}
+			button,input{
+				-webkit-appearance: none;
+				border-radius: 0;
+				/*默认外观*/
+			}
+			a{
+				text-decoration: none;
+			}
+			input{
+				outline: none;
+				vertical-align: middle;
+			}
+			
+			.container{
+				width: 13rem;
+				height: 17.5rem;
+				margin: 0.8rem auto;
+				background: url(../img/content.jpg) repeat-y;
+				border: 1.5px black solid;
+				padding: 1.2rem 0;
+			}
+			.topImg{
+				width: 98%;
+				margin: auto;
+			}
+			.UserPass{
+				height: 1.6rem;
+				line-height: 1.6rem;
+				margin-top: 0.6rem;
+				margin-left: 0.4rem;
+			}
+			.input{
+				float: right;
+			}
+			.input input{
+				width: 8rem;
+				height: 1rem;
+				border: 1px #EF5661 solid;
+				border-radius: 4px;
+				background: #F7F1E3;
+				margin-right: 0.8rem;
+			}
+			.vertify input{
+				width: 3rem;
+				margin-right: 0.2rem;
+			}
+			.YanZheng{
+				float: right;
+			}
+			.YanZheng img{
+				width: 3rem;
+				margin-top: 0.5rem;
+			}
+			.YanZheng a{
+				width: 2rem;
+				height: 1rem;
+				color: #231815;
+				font-size: 0.56rem;
+				margin:-0.3rem 0.5rem 0 0.2rem;
+			}
+			.YanZheng a:hover{
+				color: #EF5661;
+			}
+			.bottomImg{
+				width: 98%;
+				margin: 0.6rem auto;
+				height: 3.8rem;
+				background: url(../img/750/login_2.jpg) no-repeat;
+				background-size: cover;
+			}
+			.login{
+				width: 3.5rem;
+				height: 1.15rem;
+				float: left;
+				margin-left: 0.8rem;
+				margin-top: 1.4rem;
+			}
+			.forget{
+				width: 4.3rem;
+				height: 1.15rem;
+				float: right;
+				margin-top: 1.4rem;
+				margin-right: 0.1rem;
+			}
+		</style>
+	    <script type="text/javascript">
+				(function(){
+					var html = document.documentElement;
+					var width = html.getBoundingClientRect().width;
+					
+					//console.log(width);
+					html.style.fontSize = width/15 + 'px';
+					//iphone6下，1rem=25px；
+				})();
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="topImg">
+				<img style="width: 100%;" src="../img/750/login_1.jpg"/>
+			</div>
+			<div>
+				<div class="UserPass">
+					&nbsp;员工ID：
+					<div class="input">
+						<input type="text" />
+					</div>
+				</div>
+				<div class="UserPass">
+					&nbsp;密&nbsp;&nbsp;&nbsp;码：
+					<div class="input">
+						<input type="password" />
+					</div>
+				</div>
+				<div class="UserPass">
+					&nbsp;验证码：
+					<div class="YanZheng">
+						<a href="###">换一个</a>
+					</div>
+					<div class="YanZheng">
+						<img src="../img/login_6.jpg"/>
+					</div>
+					<div class="input vertify">
+						<input type="text" />
+					</div>
+				</div>
+			</div>
+			<div class="bottomImg">
+				<a href="###">
+					<div class="login"></div>
+				</a>
+				<a href="###">
+					<div class="forget"></div>
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
+

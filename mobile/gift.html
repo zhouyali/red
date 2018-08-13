@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		
+		<title>礼品中心</title>
+		<script type="text/javascript">
+			(function(){
+				var html = document.documentElement;
+				var width = html.getBoundingClientRect().width;
+				
+				//console.log(width);
+				html.style.fontSize = width/15 + 'px';
+				//iphone6下，1rem=25px；
+			})();
+		</script>
+		<style type="text/css">
+			body{
+				font-family: helvetica;
+				margin: 0;
+			}
+			body *{
+				-webkit-text-size-adjust: 100%;
+				-webkit-user-select: none;
+			}
+			a,button,input{
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				/*默认点击效果*/
+			}
+			button,input{
+				-webkit-appearance: none;
+				border-radius: 0;
+				/*默认外观*/
+			}
+			a{
+				text-decoration: none;
+			}
+			input{
+				outline: none;
+				vertical-align: middle;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			img{
+				vertical-align: middle;
+			}
+			
+			.main{
+				font-size: 0.65rem;
+				background: #EF5661;
+				padding: 0.1rem 0;
+				color: #595757;
+			}
+			.title{
+				font-size: 1rem;
+    			color: #ef5661;
+    			padding: 0 0 0.1rem 1rem;
+			}
+			.container{
+				width: 12rem;
+				min-height: 15rem;
+				margin: 0.8rem auto;
+				background: url(../img/content.jpg) repeat-y;
+				border: 1.5px black solid;
+				padding: 1.2rem 0;
+			}
+			.gap{
+				width: 15rem;
+				height: 7rem;
+				background: white;
+			}
+			.imag{
+				width: 100%;
+			}
+			.info {
+				width: 5.2rem;
+				border: 1.5px #EF5661 solid;
+				float: left;
+			    margin: 0 0 0.44rem 0.44rem;
+			    background: white;
+			}
+			.info img{
+			    width: 100%;
+			}
+			.clearfix{
+				clear: both;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="gap"></div>
+		<div class="title">礼品中心</div>
+        <div class="main">
+        	<div class="container">
+	            <div class="imag">
+	            	<div class="info">
+	                	<img src="">
+	            	</div>
+	            	<div class="info">
+	                	<img src="">
+	            	</div>
+	            	<div class="info">
+	                	<img src="">
+	            	</div>
+	            </div>
+	            <div class="clearfix"></div>
+            </div>
+        </div>
+	</body>
+</html>  

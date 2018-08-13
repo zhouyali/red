@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>讨论主题</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/common.css">
+</head>
+
+<body>
+  <div class="container">
+    <header id="title" class="clearfix">
+    </header>
+    <div class="gap"></div>
+    <div class="main-wrap" id="home">
+      <div class="main">
+        <span class="title">讨论主题</span>
+        <div class="content" id="content">
+        	<div class="border">
+				<div class="Dtitle" >
+	        		<a class="Dtitle-link" href="./chart.html">讨论主题	</a>&nbsp>>&nbsp
+	        		<span class="">我愿你的每一天，都进步，都好！</span>
+	        	</div>
+	        	<div class="Dcontent">
+	        		<span id="author">
+	        			作者：<span class="">FANGYAN</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	        			<span class="date">1楼</span>&nbsp;&nbsp;
+	        			<span class="date">2018/2/6&nbsp;&nbsp;14:08:37</span>
+	        		</span>
+	        		<div class="words">
+	        			为了你的辉煌，我愿做一株默默无闻的小草。为了你的辉煌，我愿做一株默默无闻的小草。
+	        		</div>
+	        	</div>
+	        	<div class="submit">
+	        		<a href="###" onclick="ch()">[发表评论]</a>
+	        	</div>       		
+        	</div>
+			<div class="FenYe">
+				共&nbsp; 
+				<span id="">95</span>
+				&nbsp;条记录&nbsp;&nbsp;&nbsp;
+				<span id="">1</span>
+				/
+				<span id="">16</span>
+				页&nbsp;
+				<a href="###" onclick="">首页</a>
+				<a href="###" onclick="">前页</a>
+				<a href="###" onclick="">后页</a>
+				<a href="###" onclick="">末页</a>
+				&nbsp&nbsp跳转：
+				<input id="num" style="width: 75px;height: 20px; border: 1px solid #9fa0a0; outline:none;"/>
+				&nbsp;&nbsp;
+				<a href="###" id="go" onClick="FenYe()">Go</a>
+			</div>
+        </div>
+		<div id="content2">
+			<div class="sendTitle">发表讨论</div>
+			<div class="">
+				主题 <input type="text"/>
+			</div>
+			<div class="con">
+				内容
+			</div>
+			<div class="con textarea">
+					<textarea name="" rows="" cols=""></textarea>
+			</div>
+			<div class="btn">
+	        	<a href="###" class="btn2">
+	        		提交
+	        	</a>
+	        	<a href="###" class="btn2" onclick="ch2()">
+	        		取消
+	        	</a>
+			</div>
+		</div>        
+      </div>    
+    </div>
+  </div>
+  <script type="text/javascript" src="../js/ch/head.js"></script>
+</body>
+
+</html>
+<script type="text/javascript" src="../js/ch/head.js"></script>
+<script type="text/javascript">
+	function ch(){
+		document.getElementById("content").style.display = "none";
+		document.getElementById("content2").style.display = "block";
+	}
+	function ch2(){
+		document.getElementById("content2").style.display = "none";
+		document.getElementById("content").style.display = "block";
+	}
+</script>
+<style type="text/css">
+  /*内容区样式*/
+  
+  .main-wrap {
+    width: 100%;
+    background: #ef5661;
+    padding: 20px 0 20px 0;
+	}
+	.main {
+	    width: 1060px;
+	    margin: 0 auto;
+	    position: relative;
+	    background: url(../img/content.jpg) repeat-y;
+	    
+	}
+	.title {
+	    position: absolute;
+	    top: -67px;
+	    left: 0;
+	    font-size: 30px;
+	    color: #ef5661;
+	}
+	.content{
+		width: 100%;
+		min-height: 400px;
+		padding: 30px 30px 20px 30px;
+	}
+	.border{
+		border: 1px #777777 solid;
+		margin-top: 60px;
+	}
+	.Dtitle{
+		margin: 0 0 10px 0;
+		width: 100%;
+		background: linear-gradient(#EF5661, #fff);
+		height: 35px;
+		line-height: 35px;
+		color: #E3322C;
+		font-weight: 600;
+		font-size: 17px;
+	}
+	.Dtitle-link {
+		color: #EF5661;
+		padding-left: 20px;
+	}
+	.Dcontent{
+		width: 100%;
+		padding: 0 50px;
+	}
+	#author{
+		font-weight: 600;
+	}
+	.date{
+		font-size: 14px;
+		font-weight: normal;
+	}
+	.words{
+		margin: 15px 0 10px 0;
+	}
+	.submit{
+		text-align: right;
+		background: #F2747D;
+		padding: 10px 50px;
+	}
+	.submit a {
+		color: #fff;
+	}
+	.submit a:hover{
+		color:#fff;
+	}
+	.FenYe{
+		padding: 10px 0 0 0;
+		margin: auto;
+		text-align: center;
+		width: 956px;
+	}
+	.FenYe span{
+		color: #EF5661;
+	}
+	.FenYe a{
+		margin: 0 0 0 5px;
+		text-decoration: none;
+	}
+	a:hover{
+		color: #EF5661;
+	}
+	#go{
+		width: 22px;
+		height: 18px;
+		line-height: 18px;
+		display: inline-block;
+		border: 1px #EF5661 solid;
+		background: #E1E1EB;
+		position: relative;
+		top: -0.2px;
+	}
+	/*发表主题部分开始*/
+	#content2{
+		width: 100%;
+		min-height: 200px;
+		padding: 15px;
+		display: none;
+	}
+	.sendTitle{
+		color: #EF5661;
+		padding: 10px 0 20px 0;
+	}
+  input{
+		width: 600px;
+		height: 30px;
+		border: 1px #54504d solid;
+		border-radius: 2px;
+		background: #F7F1E3;
+	}
+	.con{
+		float: left;
+		margin: 3px 0;
+	}
+	.textarea{
+		margin-left: 5px;
+	}
+	.textarea textarea{
+		width: 597px;
+		height: 300px;
+	}
+	.btn{
+	width: 70%;
+	margin: auto;
+	height: 32px;
+	margin-top: 65px;
+	clear: both;
+}
+
+.btn2{
+	display: block;
+	width: 90px;
+	float: left;
+	margin-left: 70px;
+	height: 30px;
+	border: 1px #54504D solid;
+	border-radius: 3px;
+	line-height: 30px;
+	text-align: center;
+	background: #e1e1eb;
+	border: 1px #514c49 solid;
+	border-radius: 3px;
+}
+</style>

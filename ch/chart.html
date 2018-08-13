@@ -15,11 +15,11 @@
     <div class="main-wrap" id="home">
       <div class="main">
         <span class="title">讨论专区</span>
-        <div class="content">
+        <div id="content">
         	<div class="theme">
         		<span class="themeTitle">讨论主题</span>
         		<div class="sendtheme"><a href="###">我的主题</a></div>
-        		<div class="sendtheme"><a href="###">发表主题</a></div>
+        		<div class="sendtheme"><a href="###" onclick="ch()">发表主题</a></div>
         	</div>
         	<div class="table">
         		<table class="tab" cellspacing="0" cellpadding="0">
@@ -33,7 +33,7 @@
         			</thead>
         			<tbody id="tabContent">
         				<tr>
-        					<td class="tabTheme">见证五年联想的坚毅前行！</td>
+        					<td class="tabTheme"><a href="./detail.html">见证五年联想的坚毅前行！</a></td>
         					<td class="tabAuthor">WANXI2</td>
         					<td class="tabReply">0/21</td>
         					<td class="tabUpdate"></td>
@@ -55,6 +55,18 @@
         					<td class="tabAuthor">4</td>
         					<td class="tabReply">4</td>
         					<td class="tabUpdate">4</td>
+        				</tr>
+        				<tr>
+        					<td class="tabTheme">见证五年联想的坚毅前行！</td>
+        					<td class="tabAuthor">1</td>
+        					<td class="tabReply">1</td>
+        					<td class="tabUpdate">1</td>
+        				</tr>
+        				<tr>
+        					<td class="tabTheme">见证五年联想的坚毅前行！</td>
+        					<td class="tabAuthor">1</td>
+        					<td class="tabReply">1</td>
+        					<td class="tabUpdate">1</td>
         				</tr>
         				<tr>
         					<td class="tabTheme">见证五年联想的坚毅前行！</td>
@@ -92,7 +104,26 @@
         		
         	</div>
         </div>
-
+		<div id="content2">
+			<div class="sendTitle">发表主题</div>
+			<div class="">
+				主题 <input type="text"/>
+			</div>
+			<div class="con">
+				内容
+			</div>
+			<div class="con textarea">
+					<textarea name="" rows="" cols=""></textarea>
+			</div>
+			<div class="btn">
+	        	<a href="###" class="btn2">
+	        		提交
+	        	</a>
+	        	<a href="###" class="btn2" onclick="ch2()">
+	        		取消
+	        	</a>
+			</div>
+		</div>
       </div>
       
     </div>
@@ -102,6 +133,14 @@
 
 </html>
 <script type="text/javascript">
+	function ch(){
+		document.getElementById("content").style.display = "none";
+		document.getElementById("content2").style.display = "block";
+	}
+	function ch2(){
+		document.getElementById("content2").style.display = "none";
+		document.getElementById("content").style.display = "block";
+	}
 </script>
 <style type="text/css">
   /*内容区样式*/
@@ -126,7 +165,7 @@
 	    font-size: 30px;
 	    color: #ef5661;
 	}
-	.content{
+	#content{
 		width: 100%;
 	}
 	.theme{
@@ -172,6 +211,9 @@
 		padding: 0 15px;
 		color: #EF5661;
 	}
+    .tabTheme a {
+        color:rgb(239,86,97);
+    }
 	.tabAuthor{
 		width: 130px;
 		border-right: 1.5px black solid;
@@ -215,5 +257,56 @@
 		position: relative;
 		top: -0.2px;
 	}
+	
+	/*发表主题部分开始*/
+	#content2{
+		width: 100%;
+		min-height: 200px;
+		padding: 15px;
+		display: none;
+	}
+	.sendTitle{
+		color: #EF5661;
+		padding: 10px 0 20px 0;
+	}
+  input{
+		width: 600px;
+		height: 30px;
+		border: 1px #54504d solid;
+		border-radius: 2px;
+		background: #F7F1E3;
+	}
+	.con{
+		float: left;
+		margin: 3px 0;
+	}
+	.textarea{
+		margin-left: 5px;
+	}
+	.textarea textarea{
+		width: 597px;
+		height: 300px;
+	}
+	.btn{
+	width: 70%;
+	margin: auto;
+	height: 32px;
+	margin-top: 65px;
+	clear: both;
+}
 
+.btn2{
+	display: block;
+	width: 90px;
+	float: left;
+	margin-left: 70px;
+	height: 30px;
+	border: 1px #54504D solid;
+	border-radius: 3px;
+	line-height: 30px;
+	text-align: center;
+	background: #e1e1eb;
+	border: 1px #514c49 solid;
+	border-radius: 3px;
+}
 </style>
