@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>home</title>
+	<link rel="stylesheet" href="./reset.css">
+	<style type="text/css">
+		.header-icon {
+			position: absolute;
+			top: 0;
+			right: 0;
+			cursor: pointer;
+			padding: 9px 10px;
+			margin-top: 8px;
+			margin-right: 15px;
+			margin-bottom: 8px;
+			background-color: #1A1A1A;
+			background-image: none;
+			border: 1px solid #262626;
+			border-radius: 4px;
+		}
+
+		.icon-bar {
+			background: #FFFFFF;
+			display: block;
+			width: 22px;
+			height: 2px;
+			border-radius: 1px;
+		}
+
+		.icon-bar+.icon-bar {
+			margin-top: 4px;
+		}
+
+		.header-list {
+			padding: 20px 0 0 20px;
+			display: none;
+			position: absolute;
+			right: 0;
+			width: 60%;
+			height: 100%;
+			background-color: #2964A8;
+			z-index: 100;
+		}
+
+		.header-link {
+			display: inline-block;
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			border-bottom: 1px solid #F6F6F6;
+			color: #FFFFFF;
+		}
+
+		.header-link-icon {
+			display: inline-block;
+			width: 18px;
+			height: 16px;
+		}
+		.home {
+			background: url("../img/750/home.jpg") no-repeat;
+		}
+		.reward {
+			background: url("../img/750/reward.jpg") no-repeat;
+		}
+		.thanks {
+			background: url("../img/750/thanks.jpg") no-repeat;
+		}
+		.gift {
+			background: url("../img/750/gift.jpg") no-repeat;
+		}
+		.order {
+			background: url("../img/750/order.jpg") no-repeat;
+		}
+		.chart {
+			background: url("../img/750/chart.jpg") no-repeat;
+		}
+		.contact {
+			background: url("../img/750/contact.jpg") no-repeat;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header-container">
+	</div>
+	<script>
+		(function () {
+			var urls = [
+				{ "url": "/ch/home.html", "title": "首页" },
+				{ "url": "/ch/reward.html", "title": "关于长期贡献奖" },
+				{ "url": "/ch/thanks.html", "title": "感谢信" },
+				{ "url": "/ch/gift.html", "title": "礼品中心" },
+				{ "url": "/ch/order.html", "title": "订购流程" },
+				{ "url": "/ch/chart.html", "title": "讨论专区" },
+				{ "url": "/ch/contact.html", "title": "联系我们" }
+			];
+			function initHeader() {
+				var title = `
+				<span class="header-icon">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</span>
+				<ul class="header-list">`;
+				for (var i = 0, length = urls.length; i < length; i++) {
+					let item = urls[i];
+					let url = item.url;
+					let className = getTitleName(url);
+					if (location.href.indexOf(url) > -1) {
+						className += ` active`;
+					}
+					title += `<li class="header-item">
+						<a href="${url}" class="header-link">
+							<i class="header-link-icon ${className}"></i>
+							<span>${item.title}</span>
+						</a>
+					</li>`;
+				}
+				title += `</ul>`;
+				utils.$(".header-container").innerHTML = title;
+			}
+			function getTitleName(url) {
+				let lastIndex = url.lastIndexOf("/");
+				return url.slice(lastIndex + 1).split(".")[0];
+			}
+			var utils = {
+				$: function (selector) {
+					return document.querySelector(selector);
+				},
+				attr: function (dom, obj) {
+					for (var key in obj) {
+						dom.setAttribute(key, obj[key]);
+					}
+				},
+				stopBubble: function (e) {
+					e = window.event || event;
+					if (e.stopPropagation) {
+						e.stopPropagation();
+					} else {
+						e.cancelBubble = true;
+					}
+				}
+			}
+			initHeader();
+			// 菜单逻辑
+			var headerIcon = utils.$(".header-icon");
+			var headerList = utils.$(".header-list");
+			headerIcon.onclick = function (e) {
+				utils.stopBubble(e);
+				utils.attr(headerList, {
+					"style": "display: block!important;"
+				});
+			}
+			headerList.onclick = function (e) {
+				utils.stopBubble(e);
+			}
+			document.onclick = function () {
+				utils.attr(headerList, {
+					"style": "display: none!important;"
+				});
+			}
+		})();
+	</script>
+</body>
+
+</html>

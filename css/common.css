@@ -129,6 +129,27 @@ header {
 div {
   box-sizing: border-box;
 }
+#languageBox {
+  position: fixed;
+  top:5px;
+  right:20px;
+  width: 300px;
+  text-align: right;
+}
+#languageBox span {
+  width: 50px;
+  font-size: 12px;
+  color: #7D7A7A;
 
+}
+#languageBox .logout {
+  padding: 0 10px 0 10px;
+  border-left: 2px solid #7D7A7A;
+  margin-left: 10px;
+  cursor:pointer;
+}
+#language {
+  margin-left: 5px;
+}
 
 

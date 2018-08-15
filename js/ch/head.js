@@ -20,10 +20,10 @@ for (var i = 0, length = urls.length; i < length; i++) {
         <span>${item.title}</span>
     </a>`;
 }
-title += `<select id="language">
+title += `<div id="languageBox"><span>欢迎您，<b>潘浩</b><span class="logout">退出</span></span><span>切换语言:</span><select id="language">
         <option value ="ch">中文</option>
         <option value ="en">英文</option>
-    </select>
+    </select></div>
 </div>`;
 document.getElementById("title").innerHTML = title;
 
